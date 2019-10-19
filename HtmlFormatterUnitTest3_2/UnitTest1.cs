@@ -14,11 +14,13 @@ namespace HtmlFormatterUnitTest3_2
             var result = formatter.FormatAsBold("abc");
 
             //Specific
- //           Assert.That(result, Is.EqualTo("<strong>abc</strong>"));
+            Assert.That(result, Is.EqualTo("<strong>abc</strong>").IgnoreCase);
 
             //Mor general
-            Assert.That(result, Does.StartWith("<strong>"));
+            Assert.That(result, Does.StartWith("<strong>").IgnoreCase);
             Assert.That(result, Does.EndWith("</strong>"));
+            Assert.That(result, Does.Contain("abc"));
+
         }
     }
 }
