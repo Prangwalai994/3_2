@@ -18,6 +18,7 @@ namespace HtmlFormatterUnitTest3_2
 
             //Mor general
             Assert.That(result, Does.StartWith("<strong>"));
+            Assert.That(result, Does.EndWith("</strong>"));
         }
     }
 }
