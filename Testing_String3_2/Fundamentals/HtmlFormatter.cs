@@ -10,6 +10,7 @@ namespace Testing_String3_2.Fundamentals
     {
         public string FormatAsBold(string content)
         {
+            return "<strong></strong>";
             return $"<strong>{content}<strong>";
         }
     }
